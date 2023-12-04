@@ -1,0 +1,15 @@
+:host {
+  .list {
+    width: 300px;
+    margin: auto;
+    border-radius: 12px;
+    border: 1px solid;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .btn {
+    width: 100%;
+  }
+}

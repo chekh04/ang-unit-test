@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {TodoListComponent} from "./todo-list.component";
 import {RouterModule, Routes} from "@angular/router";
+import {TodoItemComponent} from "./components/todo-item/todo-item.component";
 
 const routes: Routes = [
   {
@@ -12,7 +13,7 @@ const routes: Routes = [
 
 
 @NgModule({
-  declarations: [TodoListComponent],
+  declarations: [TodoListComponent, TodoItemComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)

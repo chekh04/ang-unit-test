@@ -1,1 +1,13 @@
-<p>todo-list works!</p>
+<div class="list">
+  <button routerLink="add-task" class="btn btn-primary">Create task</button>
+  <ng-container
+    *ngIf="(toDoList$ | async )?.length; else noTasks">
+    <app-todo-item
+      *ngFor="let todo of toDoList$ | async"
+      [task]="todo">
+    </app-todo-item>
+  </ng-container>
+</div>
+
+
+<ng-template #noTasks>Todo list is empty...</ng-template>

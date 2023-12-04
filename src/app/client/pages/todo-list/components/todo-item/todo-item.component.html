@@ -1,1 +1,6 @@
-<p>todo-item works!</p>
+<ng-container *ngIf="task">
+  <div class="task">
+    <div class="task__number">{{task.id + 1}}</div>
+    <div class="task__description">{{task.description}}</div>
+  </div>
+</ng-container>
